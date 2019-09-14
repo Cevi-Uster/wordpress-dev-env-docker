@@ -32,6 +32,3 @@ If everything works as expected, stop docker by pressing `Ctrl+C` in the shell a
 
 ### Wrong theme after restore
 In my environment. Wordpress came up with the default theme instead of our own child-theme. I had to reset it by hand in the clone.
-
-
-Docker Compose File and some helpful skripts to get a clone of a wordress blog in docker up and running
