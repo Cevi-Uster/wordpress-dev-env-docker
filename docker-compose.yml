@@ -1,10 +1,11 @@
-version: '3.3'
+version: '3.4'
 
 services:
    db:
      image: mysql:5.7
      volumes:
        - db_data:/var/lib/mysql
+       - ./data/database/database.sql:/docker-entrypoint-initdb.d/backup.sql
      restart: always
      environment:
        MYSQL_ROOT_PASSWORD: somewordpress
@@ -23,5 +24,7 @@ services:
        WORDPRESS_DB_HOST: db:3306
        WORDPRESS_DB_USER: wordpress
        WORDPRESS_DB_PASSWORD: wordpress
+     volumes:
+       - ./data/wp:/var/www/html
 volumes:
     db_data:
