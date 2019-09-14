@@ -17,7 +17,7 @@ Follow the following steps to get a running clone of your wordpress blog in a lo
 4. Copy the MySQL dump into `data/database` and rename it to database.sql
 5. Make the file `replaceUrlInDatabase.sh` executable. To do so, run the following command:
   `chmod 755 replaceUrlInDatabase.sh`
-6. Run the `replaceUrlInDatabase.sh`script
+6. Adjust the `replaceUrlInDatabase.sh` according to your needs and run it.
 7. Start Docker with the following command: 
   `docker-compose -up`
 
